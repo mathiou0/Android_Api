@@ -23,6 +23,18 @@
         <activity
             android:name=".SearchActivity"
             android:label="@string/title_activity_search"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PostActivity"
+            android:label="@string/title_activity_post"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UpdateActivity"
+            android:label="@string/title_activity_update"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DeleteActivity"
+            android:label="@string/title_activity_delete"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

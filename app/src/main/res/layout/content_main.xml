@@ -12,42 +12,6 @@
     tools:context="com.example.jim_m.myapplication.MainActivity"
     tools:showIn="@layout/activity_main">
 
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="89dp"
-        android:id="@+id/edtTxtFirstName"
-        android:hint="First Name" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:layout_below="@+id/edtTxtFirstName"
-        android:layout_alignRight="@+id/edtTxtFirstName"
-        android:layout_alignEnd="@+id/edtTxtFirstName"
-        android:layout_marginTop="23dp"
-        android:id="@+id/edtLastName"
-        android:hint="Last Name" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:layout_below="@+id/edtLastName"
-        android:layout_alignRight="@+id/edtLastName"
-        android:layout_alignEnd="@+id/edtLastName"
-        android:layout_marginTop="15dp"
-        android:id="@+id/editText3"
-        android:hint="Address" />
-
     <Button
         android:text="Post"
         android:layout_width="wrap_content"
@@ -55,22 +19,13 @@
         android:id="@+id/btnPost"
         android:onClick="Post"
         tools:text="Post"
-        android:layout_marginBottom="34dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/txtViewLastName"
-        android:layout_alignEnd="@+id/txtViewLastName" />
+        android:layout_marginTop="94dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="44dp"
+        android:layout_marginEnd="44dp" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:ems="10"
-        android:layout_marginTop="21dp"
-        android:id="@+id/editSalary"
-        android:layout_below="@+id/editText3"
-        android:layout_alignLeft="@+id/editText3"
-        android:layout_alignStart="@+id/editText3"
-        android:hint="Salary" />
 
     <Button
         android:layout_width="wrap_content"
@@ -78,8 +33,32 @@
         android:text="Search "
         android:onClick="Search"
         android:id="@+id/btnSearch"
+        android:layout_alignBaseline="@+id/btnPost"
         android:layout_alignBottom="@+id/btnPost"
-        android:layout_alignRight="@+id/editSalary"
-        android:layout_alignEnd="@+id/editSalary" />
+        android:layout_toLeftOf="@+id/btnPost"
+        android:layout_toStartOf="@+id/btnPost"
+        android:layout_marginRight="63dp"
+        android:layout_marginEnd="63dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete "
+        android:onClick="Delete"
+        android:id="@+id/btnDelete"
+        android:layout_below="@+id/btnPost"
+        android:layout_alignLeft="@+id/btnSearch"
+        android:layout_alignStart="@+id/btnSearch" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:onClick="Update"
+        android:id="@+id/btnUpdate"
+        android:layout_below="@+id/btnPost"
+        android:layout_toRightOf="@+id/btnSearch"
+        android:layout_toEndOf="@+id/btnSearch" />
 
 </RelativeLayout>
