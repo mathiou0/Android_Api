@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.jim_m.myapplication.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="89dp"
+        android:id="@+id/edtTxtFirstName"
+        android:hint="First Name" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/edtTxtFirstName"
+        android:layout_alignRight="@+id/edtTxtFirstName"
+        android:layout_alignEnd="@+id/edtTxtFirstName"
+        android:layout_marginTop="23dp"
+        android:id="@+id/edtLastName"
+        android:hint="Last Name" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/edtLastName"
+        android:layout_alignRight="@+id/edtLastName"
+        android:layout_alignEnd="@+id/edtLastName"
+        android:layout_marginTop="15dp"
+        android:id="@+id/editText3"
+        android:hint="Address" />
+
+    <Button
+        android:text="Post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPost"
+        android:onClick="Post"
+        tools:text="Post"
+        android:layout_marginBottom="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/txtViewLastName"
+        android:layout_alignEnd="@+id/txtViewLastName" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_marginTop="21dp"
+        android:id="@+id/editSalary"
+        android:layout_below="@+id/editText3"
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_alignStart="@+id/editText3"
+        android:hint="Salary" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search "
+        android:onClick="Search"
+        android:id="@+id/btnSearch"
+        android:layout_alignBottom="@+id/btnPost"
+        android:layout_alignRight="@+id/editSalary"
+        android:layout_alignEnd="@+id/editSalary" />
+
+</RelativeLayout>
