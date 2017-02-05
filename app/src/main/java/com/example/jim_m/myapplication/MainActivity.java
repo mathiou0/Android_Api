@@ -36,12 +36,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        String test="";
         First_Name= (EditText)findViewById(R.id.edtTxtFirstName);
         Last_Name= (EditText)findViewById(R.id.edtLastName);
         Salary=(EditText)findViewById(R.id.editSalary);
         Address=(EditText)findViewById(R.id.editText3);
         Post= (Button)findViewById(R.id.btnPost);
-        String test="";
+        String a="";
     }
     public void Search(View view) {
         Intent intent = new Intent(this, SearchActivity.class);
