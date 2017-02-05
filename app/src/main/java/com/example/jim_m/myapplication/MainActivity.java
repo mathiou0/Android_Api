@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
     public void Search(View view) {
         Intent intent = new Intent(this, SearchActivity.class);
         startActivity(intent);
+
     }
 
     public void Post(View view){
@@ -57,7 +58,9 @@ public class MainActivity extends AppCompatActivity {
         params.put("last_name", last_name);
         params.put("address", address);
         params.put("salary1", salary);
+
         invokeWS(params);
+
     }
 
     public void invokeWS(RequestParams params){
