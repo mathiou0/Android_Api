@@ -27,6 +27,7 @@ import java.io.UnsupportedEncodingException;
 
 public class MainActivity extends AppCompatActivity {
     EditText First_Name;
+
     Button Post;
     EditText Last_Name;
     EditText Salary;
@@ -40,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         Salary=(EditText)findViewById(R.id.editSalary);
         Address=(EditText)findViewById(R.id.editText3);
         Post= (Button)findViewById(R.id.btnPost);
-
+        String test="";
     }
     public void Search(View view) {
         Intent intent = new Intent(this, SearchActivity.class);
