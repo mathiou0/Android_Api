@@ -37,27 +37,17 @@
         android:layout_alignBottom="@+id/btnPost"
         android:layout_toLeftOf="@+id/btnPost"
         android:layout_toStartOf="@+id/btnPost"
-        android:layout_marginRight="63dp"
-        android:layout_marginEnd="63dp" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Delete "
-        android:onClick="Delete"
-        android:id="@+id/btnDelete"
-        android:layout_below="@+id/btnPost"
-        android:layout_alignLeft="@+id/btnSearch"
-        android:layout_alignStart="@+id/btnSearch" />
+        android:layout_marginRight="44dp"
+        android:layout_marginEnd="44dp" />
 
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Update"
+        android:text="List"
         android:onClick="Update"
         android:id="@+id/btnUpdate"
-        android:layout_below="@+id/btnPost"
+        android:layout_below="@+id/btnSearch"
         android:layout_toRightOf="@+id/btnSearch"
         android:layout_toEndOf="@+id/btnSearch" />
 
